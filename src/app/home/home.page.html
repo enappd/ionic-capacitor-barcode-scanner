@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Capacitor Ionic
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-grid class="justify-center">
+      <ion-text>Barcode Scanner Demo</ion-text>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="assets/barcode.jpeg" />
+    <ion-card-content>
+      <ion-text>This section shows the demo of how to scan a QRCode or Barcode to get the information</ion-text>
+
+      <ion-button color="success" expand="full" (click)="scan()">Scan code</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-item *ngIf="data">
+    <ion-label position="stacked">Scan Format</ion-label>
+    <ion-input [value]="data.format" readonly></ion-input>
+  </ion-item>
+  <ion-item *ngIf="data">
+    <ion-label position="stacked">Scan Information</ion-label>
+    <ion-input [value]="data.text" readonly></ion-input>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="justify-align-center">
+        <ion-text>By </ion-text>
+        <ion-img src="assets/enappd.png" class="inline-b"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

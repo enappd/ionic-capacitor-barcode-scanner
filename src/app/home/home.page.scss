@@ -1,0 +1,14 @@
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+.justify-align-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.inline-b {
+  display: inline-block;
+  width: 80px;
+  margin-left: 5px;
+}

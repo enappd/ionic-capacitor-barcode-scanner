@@ -1,0 +1,8 @@
+{
+  "name": "ionic-capacitor-barcode-scanner",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
